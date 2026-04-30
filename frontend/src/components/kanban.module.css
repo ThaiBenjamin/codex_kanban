@@ -1,0 +1,14 @@
+.page { padding: 2rem; }
+.header h1 { color: var(--dark-navy); margin: 0; }
+.header p { color: var(--gray-text); margin: .5rem 0 1.5rem; }
+.board { display: grid; grid-template-columns: repeat(5, minmax(220px, 1fr)); gap: 1rem; }
+.column { background: var(--panel); border-top: 4px solid var(--accent-yellow); border-radius: 14px; padding: .8rem; box-shadow: 0 8px 20px rgba(3,33,71,.08); min-height: 350px; display:flex; flex-direction:column; }
+.rename { background: transparent; border: none; text-align: left; color: var(--dark-navy); font-weight: 700; font-size: 1rem; cursor: pointer; }
+.cards { flex:1; display:grid; gap:.7rem; margin:.8rem 0; }
+.card { border: 1px solid #d9e7f4; border-left: 4px solid var(--blue-primary); padding: .7rem; border-radius: 10px; background: #fcfeff; }
+.card h3 { margin:0 0 .4rem; font-size:.95rem; }
+.card p { margin:0 0 .6rem; color: var(--gray-text); font-size:.85rem; }
+.add { border:none; background: var(--purple-secondary); color:#fff; padding:.55rem .7rem; border-radius:10px; cursor:pointer; }
+.delete { border:1px solid var(--accent-yellow); background: #fff; border-radius:8px; padding:.35rem .6rem; color: var(--dark-navy); cursor:pointer; }
+@media (max-width: 1200px) { .board { grid-template-columns: repeat(2, minmax(220px, 1fr)); } }
+@media (max-width: 680px) { .board { grid-template-columns: 1fr; } }
